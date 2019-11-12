@@ -8,6 +8,7 @@
     "test": "./node_modules/.bin/_mocha --timeout 0"
   },
   "dependencies": {
+    "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
   "devDependencies": {
