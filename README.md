@@ -50,3 +50,14 @@ zip -r cl-kaiko-vwap.zip .
 - Click More, Add variable (repeat for all environment variables)
   - NAME: API_KEY
   - VALUE: Your_API_key
+  
+## Run with Docker
+
+```bash
+docker build . -t kaiko-vwap-adapter
+docker run -d \
+    -p 8080:8080 \
+    -e EA_PORT=8080 \
+    -e API_KEY="Your_kaiko_API_key" \
+    kaiko-vwap-adapter
+```
